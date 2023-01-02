@@ -1,5 +1,6 @@
 .convex-up.navigation ul li.active div .icon {
     transform: translateY(-35px);
+    color: var(--active);
 }
 
 .convex-up.navigation ul li div .text {
@@ -18,6 +19,7 @@
 
 .convex-up.navigation ul li.active div .text {
     opacity: 1;
+    color: #fff;
     transform: translateY(10px);
 }
 
@@ -29,7 +31,6 @@
     height: 70px;
     background: #fff;
     border-radius: 50%;
-    /* z-index: 1; */
     transition: 0.5s;
 }
 

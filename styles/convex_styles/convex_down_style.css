@@ -1,4 +1,5 @@
 .convex-down.navigation ul li.active div .icon {
+    color: var(--active2);
     transform: translateY(35px);
 }
 
@@ -6,7 +7,7 @@
 .convex-down.navigation ul li div .text {
     position: absolute;
     color: var(--dark);
-    background-color: var(--active);
+    background-color: var(--active2);
     padding: 2px 7px;
     border-radius: 12px;
     font-weight: 500;
@@ -19,6 +20,7 @@
 
 .convex-down.navigation ul li.active div .text {
     opacity: 1;
+    color: #fff;
     transform: translateY(-15px);
 }
  
