@@ -1,0 +1,60 @@
+.convex-up.navigation ul li.active div .icon {
+    transform: translateY(-35px);
+}
+
+.convex-up.navigation ul li div .text {
+    position: absolute;
+    color: var(--dark);
+    background-color: var(--active);
+    padding: 2px 7px;
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.convex-up.navigation ul li.active div .text {
+    opacity: 1;
+    transform: translateY(10px);
+}
+
+
+.convex-up.navigation ul .indicator {
+    position: absolute;
+    top: -50%;
+    width: 70px;
+    height: 70px;
+    background: #fff;
+    border-radius: 50%;
+    /* z-index: 1; */
+    transition: 0.5s;
+}
+
+.convex-up.navigation ul .indicator::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -27px;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-radius:50%;
+    box-shadow: 15px 18px 0 0 #fff;
+}
+
+.convex-up.navigation ul .indicator::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: -27px;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: -15px 18px 0 0 #fff;
+}
+
+
