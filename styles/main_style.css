@@ -21,7 +21,40 @@ body {
     flex-direction: column;
 }
 
-.navigation{
-    margin-top: 100px;
-    margin-bottom: 100px;
+.navigation {
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.fb-container {
+    background: var(--dark);
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    z-index: 2;
+    /* border-bottom: 2px solid  var(--active2); */
+}
+
+.fb-link {
+    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.fb-img {
+    background-image: url(https://dev.foma-blog.ru/img/fb15.svg);
+    width: 135px;
+    height: 70px;
+    background-size: cover;
+    filter: invert(1);
+}
+
+.fb-title {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
 }
