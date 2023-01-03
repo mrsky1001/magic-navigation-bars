@@ -21,7 +21,7 @@
 .convex-down.navigation ul li.active div .text {
     opacity: 1;
     color: #fff;
-    transform: translateY(-15px);
+    transform: translateY(-5px);
 }
  
 

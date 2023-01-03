@@ -1,9 +1,9 @@
-.bubble-down.navigation ul li.active div .icon {
+.bubble-down .navigation ul li.active div .icon {
     transform: translateY(35px);
 }
 
 
-.bubble-down.navigation ul li div .text {
+.bubble-down .navigation ul li div .text {
     position: absolute;
     color: var(--dark);
     font-weight: 500;
@@ -14,13 +14,13 @@
     transform: translateY(20px);
 }
 
-.bubble-down.navigation ul li.active div .text {
+.bubble-down .navigation ul li.active div .text {
     opacity: 1;
     transform: translateY(-20px);
 }
  
 
-.bubble-down.navigation ul .indicator {
+.bubble-down .navigation ul .indicator {
     position: absolute;
     top: 50%;
     width: 70px;
@@ -31,7 +31,7 @@
     transition: 0.5s;
 }
 
-.bubble-down.navigation ul .indicator::before {
+.bubble-down .navigation ul .indicator::before {
     content: '';
     position: absolute;
     top: 16%;
@@ -43,7 +43,7 @@
     box-shadow: 0px 10px 0 0 var(--dark);
 }
 
-.bubble-down.navigation ul .indicator::after {
+.bubble-down .navigation ul .indicator::after {
     content: '';
     position: absolute;
     top: 16%;
@@ -55,3 +55,71 @@
     box-shadow: 0px 10px 0 0 var(--dark); 
 }
 
+ 
+@media (max-width: 500px) {
+    .bubble-down  {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .bubble-down .navigation ul .indicator {
+        position: absolute;
+        right: 50%;
+        top: 0px;
+        width: 70px;
+        height: 70px;
+        background:  var(--active2);
+        border-radius: 50%;
+        border: 6px solid var(--dark);
+        transition: 0.5s;
+    }
+    
+    .bubble-down .navigation ul .indicator::before {
+        content: '';
+        position: absolute;
+        left: 29px;
+        top: -22px;
+        width: 20px;
+        height: 20px;
+        background: transparent;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 20px;
+        box-shadow: -10px 1px 0 0 var(--dark);
+    }
+    
+    .bubble-down .navigation ul .indicator::after {
+        content: '';
+        position: absolute;
+        top: 60px;
+        right: 9px;
+        width: 20px;
+        height: 20px;
+        background: transparent;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 20px;
+        box-shadow: -10px 0px 0 0 var(--dark);
+    }
+
+    .navigation ul li div{
+        align-items: center;
+    }
+    
+    .bubble-down .navigation ul li.active div .icon {
+        transform: translateX(-35px);
+    }
+    
+    .bubble-down .navigation ul li div .text {
+        transform: translateX(-30px) translateY(10px);
+        background-color: #fff;    
+        border-radius: 20%;    
+        padding: 5px 5px;
+    }
+    
+    .bubble-down .navigation ul li.active div .text {
+        opacity: 1;
+        transform: translateX(-130px);
+    }
+    
+}
