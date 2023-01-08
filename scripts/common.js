@@ -14,7 +14,7 @@ const setListenersForActiveTabs = (queryString) => {
 }
 
 
-setListenersForActiveTabs('.bubble-up.navigation > ul > li.list')
-setListenersForActiveTabs('.bubble-down.navigation  > ul > li.list')
-setListenersForActiveTabs('.convex-up.navigation  > ul > li.list')
-setListenersForActiveTabs('.convex-down.navigation  > ul > li.list')
+setListenersForActiveTabs('.bubble-up .navigation > ul > li.list')
+setListenersForActiveTabs('.bubble-down .navigation  > ul > li.list')
+setListenersForActiveTabs('.convex-up .navigation  > ul > li.list')
+setListenersForActiveTabs('.convex-down .navigation  > ul > li.list')
