@@ -1,10 +1,10 @@
-.convex-down.navigation ul li.active div .icon {
+.convex-down .navigation ul li.active div .icon {
     color: var(--active2);
     transform: translateY(35px);
 }
 
 
-.convex-down.navigation ul li div .text {
+.convex-down .navigation ul li div .text {
     position: absolute;
     color: var(--dark);
     background-color: var(--active2);
@@ -18,14 +18,14 @@
     transform: translateY(20px);
 }
 
-.convex-down.navigation ul li.active div .text {
+.convex-down .navigation ul li.active div .text {
     opacity: 1;
     color: #fff;
     transform: translateY(-5px);
 }
  
 
-.convex-down.navigation ul .indicator {
+.convex-down .navigation ul .indicator {
     position: absolute;
     top: 50%;
     width: 70px;
@@ -35,7 +35,7 @@
     transition: 0.5s;
 }
 
-.convex-down.navigation ul .indicator::before {
+.convex-down .navigation ul .indicator::before {
     content: '';
     position: absolute;
     top: 35px;
@@ -47,7 +47,7 @@
     box-shadow: 15px -18px 0 0 #fff;
 }
 
-.convex-down.navigation ul .indicator::after {
+.convex-down .navigation ul .indicator::after {
     content: '';
     position: absolute;
     top: 35px;
@@ -59,3 +59,91 @@
     box-shadow: -15px -18px 0 0 #fff;
 }
 
+
+@media (max-width: 500px) {
+    .convex-down  {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
+    .convex-down .navigation ul li.active div .icon {
+        color: var(--active2);
+        transform: translateX(-40px);
+    }
+    
+    
+    .convex-down .navigation ul li div .text {
+        align-self: flex-end;
+    }
+    
+    .convex-down .navigation ul li.active div .text {
+        opacity: 1;
+        color: #fff;
+        transform: translateX(-120px);
+        border: 6px solid #fff;
+    }
+
+    .convex-down .navigation ul li.active div .text::before {
+        content: '';
+        position: absolute;
+        right: -28px;
+        top: 19px;
+        border-radius:50%;
+        width: 30px;
+        height: 30px;
+        background: transparent;
+        box-shadow: 5px -19px 0 0 #fff;
+    }
+
+    .convex-down .navigation ul li.active div .text::after {
+        content: '';
+        position: absolute;
+        right: -26px;
+        top:-30px;
+        border-radius:50%;
+        width: 30px;
+        height: 30px;
+        background: transparent;
+        box-shadow: 5px 20px 0 0 #fff;
+    }
+     
+    
+    .convex-down .navigation ul .indicator {
+        position: absolute;
+        top: 19px;
+        right:  50%;
+        width: 70px;
+        height: 70px;
+        background: #fff;
+        border-radius: 50%;
+        transition: 0.5s;
+    }
+    
+    .convex-down .navigation ul .indicator::before {
+        content: '';
+        position: absolute;
+        left: 15px;
+        top: -19px;
+        width: 20px;
+        height: 20px;
+        background: transparent;
+        border-radius:50%;
+        box-shadow: 10px 10px 0 0 #fff;
+    }
+    
+    .convex-down .navigation ul .indicator::after {
+        content: '';
+        position: absolute;
+        left: 15px;
+        top: 69px;
+        width: 20px;
+        height: 20px;
+        background: transparent;
+        border-radius: 50%;
+        box-shadow: 10px -10px 0 0 #fff;
+    }
+    
+}

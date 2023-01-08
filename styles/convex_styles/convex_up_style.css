@@ -1,9 +1,9 @@
-.convex-up.navigation ul li.active div .icon {
+.convex-up .navigation ul li.active div .icon {
     transform: translateY(-35px);
     color: var(--active);
 }
 
-.convex-up.navigation ul li div .text {
+.convex-up .navigation ul li div .text {
     position: absolute;
     color: var(--dark);
     background-color: var(--active);
@@ -17,14 +17,14 @@
     transform: translateY(20px);
 }
 
-.convex-up.navigation ul li.active div .text {
+.convex-up .navigation ul li.active div .text {
     opacity: 1;
     color: #fff;
     transform: translateY(0px);
 }
 
 
-.convex-up.navigation ul .indicator {
+.convex-up .navigation ul .indicator {
     position: absolute;
     top: -50%;
     width: 70px;
@@ -34,7 +34,7 @@
     transition: 0.5s;
 }
 
-.convex-up.navigation ul .indicator::before {
+.convex-up .navigation ul .indicator::before {
     content: '';
     position: absolute;
     top: 5px;
@@ -46,13 +46,7 @@
     box-shadow: 15px 18px 0 0 #fff;
 }
 
-/* .navigation ul li:nth-child(1).active ~ .indicator::before {
-    display: none;
-    transition: 3.5s;
-
-} */
-
-.convex-up.navigation ul .indicator::after {
+.convex-up .navigation ul .indicator::after {
     content: '';
     position: absolute;
     top: 5px;
@@ -65,3 +59,57 @@
 }
 
 
+@media (max-width: 500px) {
+ 
+    .convex-up .navigation ul li.active div .icon {
+        transform: translateX(40px);
+        color: var(--active);
+    }
+    
+    .convex-up .navigation ul li div .text {
+        align-self: flex-start;
+    }
+    
+    .convex-up .navigation ul li.active div .text {
+        opacity: 1;
+        color: #fff;
+        transform: translateX(120px);
+    }
+    
+    
+    .convex-up .navigation ul .indicator {
+        position: absolute;
+        top: 19px;
+        left: 50%;
+        width: 70px;
+        height: 70px;
+        background: #fff;
+        border-radius: 50%;
+        transition: 0.5s;
+    }
+    
+    .convex-up .navigation ul .indicator::before {
+        content: '';
+        position: absolute;
+        left: 35px;
+        top: -19px;
+        width: 20px;
+        height: 20px;
+        background: transparent;
+        border-radius:50%;
+        box-shadow: -10px 10px 0 0 #fff;
+    }
+    
+    .convex-up .navigation ul .indicator::after {
+        content: '';
+        position: absolute;
+        left: 35px;
+        top: 69px;
+        width: 20px;
+        height: 20px;
+        background: transparent;
+        border-radius: 50%;
+        box-shadow: -10px -10px 0 0 #fff;
+    }
+
+}

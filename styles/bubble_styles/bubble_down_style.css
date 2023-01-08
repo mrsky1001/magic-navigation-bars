@@ -67,7 +67,7 @@
     .bubble-down .navigation ul .indicator {
         position: absolute;
         right: 50%;
-        top: 0px;
+        top: 19px;
         width: 70px;
         height: 70px;
         background:  var(--active2);
@@ -102,15 +102,13 @@
         box-shadow: -10px 0px 0 0 var(--dark);
     }
 
-    .navigation ul li div{
-        align-items: center;
-    }
     
     .bubble-down .navigation ul li.active div .icon {
         transform: translateX(-35px);
     }
     
     .bubble-down .navigation ul li div .text {
+        align-self: flex-end;
         transform: translateX(-30px) translateY(10px);
         background-color: #fff;    
         border-radius: 20%;    
@@ -119,7 +117,7 @@
     
     .bubble-down .navigation ul li.active div .text {
         opacity: 1;
-        transform: translateX(-130px);
+        transform: translateX(-120px);
     }
     
 }
